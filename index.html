@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouts & Responsive Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">CSS<span>Layouts</span></div>
+                <button class="menu-toggle">☰</button>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Modern CSS Layout Techniques</h1>
+            <p>Learn how to create responsive and flexible web layouts using CSS Grid and Flexbox</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <main>
+                <section class="mb-2">
+                    <h2>CSS Layout Features</h2>
+                    <div class="features">
+                        <div class="feature">
+                            <h3>Flexbox Layout</h3>
+                            <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns. It allows items to flex to fill additional space or shrink to fit into smaller spaces.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>CSS Grid</h3>
+                            <p>CSS Grid is a two-dimensional layout system designed for more complex layouts. It allows you to create grid-based designs with precise control over rows and columns.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Responsive Design</h3>
+                            <p>Create websites that adapt to different screen sizes and devices using media queries, flexible grids, and responsive images.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Project Showcase</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-img">Flexbox Card</div>
+                            <div class="card-content">
+                                <h3>Flexbox Example</h3>
+                                <p>This card demonstrates the use of Flexbox for interior content layout and alignment.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">Grid Layout</div>
+                            <div class="card-content">
+                                <h3>Grid Example</h3>
+                                <p>This card is part of a grid layout that adjusts based on screen size.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">Responsive Design</div>
+                            <div class="card-content">
+                                <h3>Responsive Example</h3>
+                                <p>This layout changes based on viewport size, demonstrating responsive principles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>About CSS Layouts</h3>
+                    <p>Modern CSS provides powerful layout tools like Flexbox and Grid that make creating responsive websites easier than ever.</p>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Flexbox</a></li>
+                        <li><a href="#">CSS Grid</a></li>
+                        <li><a href="#">Responsive Design</a></li>
+                        <li><a href="#">Media Queries</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Tags</h3>
+                    <div class="tag-cloud">
+                        <span class="tag">CSS</span>
+                        <span class="tag">Layout</span>
+                        <span class="tag">Grid</span>
+                        <span class="tag">Flexbox</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We create modern, responsive websites using the latest CSS layout techniques.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for web design tips and updates.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CSS Layouts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
